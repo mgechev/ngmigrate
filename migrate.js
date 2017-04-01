@@ -31,7 +31,7 @@ try {
   foundErrors = true;
 
   if (e && e.output && e.output[1]) {
-    console.log(chalk.cyan.bold('I found these warnings:'));
+    console.log(chalk.cyan.bold('I found these deprecations:'));
     console.log(e.output[1].toString());
 
     inquirer.prompt([
