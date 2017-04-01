@@ -1,0 +1,32 @@
+{
+  "name": "ng-template-auto-migration",
+  "version": "1.0.0",
+  "description": "Automatic migration to ng-template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgechev/ng-template-auto-migration.git"
+  },
+  "keywords": [
+    "codelyzer",
+    "angular"
+  ],
+  "author": "Minko Gechev <mgechev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mgechev/ng-template-auto-migration/issues"
+  },
+  "homepage": "https://github.com/mgechev/ng-template-auto-migration#readme",
+  "dependencies": {
+    "@angular/compiler": "4.0.0",
+    "@angular/core": "4.0.0",
+    "codelyzer": "https://github.com/mgechev/codelyzer-migration",
+    "rxjs": "5.1.0",
+    "tslint": "https://github.com/mgechev/tslint#ng-template-migration",
+    "typescript": "^2.2.2",
+    "zone.js": "^0.8.4"
+  }
+}

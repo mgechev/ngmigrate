@@ -1,0 +1,66 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/mgechev/Library/Python/2.7/bin:/Users/mgechev/.node/bin:/usr/texbin:/usr/local/heroku/bin:/Users/mgechev/bin:/Users/mgechev/Projects/golang/bin:/opt/local/bin:/opt/local/sbin:~/.rvm/gems/ruby-1.9.2-p320/bin:~/.rvm/gems/ruby-1.9.2-p320@global/bin:~/.rvm/rubies/ruby-1.9.2-p320/bin:~/.rvm/bin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Applications/apache-ant-1.9.2/bin/:~/Development/android/sdk/tools/:~/Development/android/sdk/platform-tools/:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools:/usr/local/git/bin:/Users/mgechev/.rvm/bin:/usr/local/git/bin:/Users/mgechev/.golang/bin:/usr/local/opt/dart/libexec/bin:/usr/local/git/bin:/usr/local/bin:/usr/local/sbin:/usr/texbin:/usr/local/heroku/bin:~/bin:/bin:/opt/local/bin:/opt/local/sbin:~/.rvm/gems/ruby-2.0.0-p576/bin:~/.rvm/gems/ruby-2.0.0-p576@global/bin:~/.rvm/rubies/ruby-2.0.0-p576/bin:~/.rvm/bin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Applications/apache-ant-1.9.2/bin:~/Development/android/sdk/tools:~/Development/android/sdk/platform-tools/:/Development/android-sdk-macosx/platform-tools:/Development/android-sdk-macosx/tools:/usr/local/git/bin:~/.rvm/bin:/usr/local/git/bin:/usr/local/opt/dart/libexec/bin:/Applications/Julia-0.6.app/Contents/Resources/julia/bin:/Users/mgechev/.npm-packages/bin
+
+Yarn version: 
+  0.21.3
+
+Node version: 
+  6.9.5
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "ng-template-auto-migration",
+    "version": "1.0.0",
+    "description": "Automatic migration to ng-template",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mgechev/ng-template-auto-migration.git"
+    },
+    "keywords": [
+      "codelyzer",
+      "angular"
+    ],
+    "author": "Minko Gechev <mgechev@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/mgechev/ng-template-auto-migration/issues"
+    },
+    "homepage": "https://github.com/mgechev/ng-template-auto-migration#readme",
+    "dependencies": {
+      "@angular/core": "4.0.0",
+      "@angular/compiler": "4.0.0",
+      "zone.js": "^0.8.4",
+      "rx.js": "5.1.0",
+      "codelyzer": "https://github.com/mgechev/codelyzer-migration",
+      "tslint": "https://github.com/mgechev/tslint/tree/ng-templates"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://github.com/mgechev/tslint/tree/ng-templates: invalid tar file
+      at Extract.Parse._startEntry (/usr/local/lib/node_modules/yarn/node_modules/tar/lib/parse.js:149:13)
+      at Extract.Parse._process (/usr/local/lib/node_modules/yarn/node_modules/tar/lib/parse.js:131:12)
+      at BlockStream.<anonymous> (/usr/local/lib/node_modules/yarn/node_modules/tar/lib/parse.js:47:8)
+      at emitOne (events.js:96:13)
+      at BlockStream.emit (events.js:188:7)
+      at BlockStream._emitChunk (/usr/local/lib/node_modules/yarn/node_modules/block-stream/block-stream.js:145:10)
+      at BlockStream.write (/usr/local/lib/node_modules/yarn/node_modules/block-stream/block-stream.js:45:10)
+      at Extract.Parse.write (/usr/local/lib/node_modules/yarn/node_modules/tar/lib/parse.js:81:23)
+      at UnpackStream.ondata (_stream_readable.js:555:20)
+      at emitOne (events.js:96:13)

@@ -1,0 +1,6 @@
+{
+  "rulesDirectory": ["node_modules/codelyzer"],
+  "rules": {
+    "template-to-ng-template": true
+  }
+}
