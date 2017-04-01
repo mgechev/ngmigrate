@@ -11,9 +11,9 @@ newline();
 console.log(chalk.green('Let\'s migrate your templates!'));
 newline();
 
-const files = process.argv[2];
+const files = process.argv.slice(1, process.argv.length);
 
-if (!files) {
+if (!files.length) {
   console.log(chalk.red('Path is not provided!'));
   console.log(chalk.white('Please use the tool with:'));
   newline();
@@ -22,7 +22,7 @@ if (!files) {
   process.exit(0);
 }
 
-const command = './node_modules/.bin/tslint -c migrate.json ' + files;
+const command = './node_modules/.bin/tslint -c migrate.json ' + files.join(' ');
 let foundErrors = false;
 
 try {
