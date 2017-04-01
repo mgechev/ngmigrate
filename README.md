@@ -1,5 +1,7 @@
 # Automated Migration
 
+![](./resources/migrate.gif)
+
 ### Context-aware automated migration of `<template>` to `<ng-template>`.
 
 This tool will automatically migrate your templates from the deprecated `<template>` element to the new `<ng-template>` introduced by Angular 4.
