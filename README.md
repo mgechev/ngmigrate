@@ -19,6 +19,8 @@ Although the tool is well tested, glitches are possible. In order to not loose i
 # How to use it?
 
 ```
+$ git clone https://github.com/mgechev/ng-template.git --depth 1
+$ cd ng-template && npm i
 $ npm run migrate [PATH_TO_YOUR_FILES]
 ```
 
