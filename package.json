@@ -1,6 +1,6 @@
 {
   "name": "ngmigrate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": {
     "ngmigrate": "./bin/ngmigrate"
   },
