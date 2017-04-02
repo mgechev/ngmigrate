@@ -1,5 +1,7 @@
 # Automated Migration
 
+Tool for automatic migration of Angular applications. `ngmigrate` can be used for migration of `<template>` elements to `<ng-template>`.
+
 ![](./resources/migrate.gif)
 
 ### Context-aware automated migration of `<template>` to `<ng-template>`.
@@ -27,3 +29,4 @@ $ npm run migrate [PATH_TO_YOUR_FILES]
 # License
 
 MIT
+

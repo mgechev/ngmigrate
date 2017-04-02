@@ -1,9 +1,9 @@
-const chalk = require('chalk');
-const inquirer = require('inquirer');
-const exec = require('child_process').execSync;
-const fs = require('fs');
+var chalk = require('chalk');
+var inquirer = require('inquirer');
+var exec = require('child_process').execSync;
+var fs = require('fs');
 
-const newline = () => console.log();
+var newline = function () { console.log() };
 
 console.log(fs.readFileSync('./resources/banner').toString());
 
@@ -11,7 +11,7 @@ newline();
 console.log(chalk.green('Let\'s migrate your templates!'));
 newline();
 
-const files = process.argv.slice(1, process.argv.length);
+var files = process.argv.slice(1, process.argv.length);
 
 if (!files.length) {
   console.log(chalk.red('Path is not provided!'));
@@ -22,8 +22,8 @@ if (!files.length) {
   process.exit(0);
 }
 
-const command = './node_modules/.bin/tslint -c migrate.json ' + files.join(' ');
-let foundErrors = false;
+var command = './node_modules/.bin/tslint -c migrate.json ' + files.join(' ');
+var foundErrors = false;
 
 try {
   console.log(exec(command).toString());
@@ -67,3 +67,4 @@ if (!foundErrors) {
   console.log(chalk.green.bold('I didn\'t find anything wrong! All seems fine!'));
   newline();
 }
+

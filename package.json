@@ -1,14 +1,17 @@
 {
-  "name": "ng-template-auto-migration",
-  "version": "1.0.0",
-  "description": "Automatic migration to ng-template",
-  "main": "index.js",
+  "name": "ngmigrate",
+  "version": "0.0.1",
+  "bin": {
+    "ngmigrate": "./bin/ngmigrate"
+  },
+  "description": "Automatic migration of Angular applications",
+  "main": "migrate.js",
   "scripts": {
-    "migrate": "node migrate.js"
+    "publish": "rm -rf dist && mkdir dist && cp -r bin migrate.js migrate.json README.md package.json resources dist && ts-node tools/cleanup.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mgechev/ng-template-auto-migration.git"
+    "url": "git+https://github.com/mgechev/ngmigrate.git"
   },
   "keywords": [
     "codelyzer",
@@ -17,9 +20,9 @@
   "author": "Minko Gechev <mgechev@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mgechev/ng-template-auto-migration/issues"
+    "url": "https://github.com/mgechev/ngmigrate/issues"
   },
-  "homepage": "https://github.com/mgechev/ng-template-auto-migration#readme",
+  "homepage": "https://github.com/mgechev/ngmigrate#readme",
   "dependencies": {
     "@angular/compiler": "4.0.0",
     "@angular/core": "4.0.0",
@@ -27,8 +30,12 @@
     "codelyzer": "https://github.com/mgechev/codelyzer-migration",
     "inquirer": "^3.0.6",
     "rxjs": "5.1.0",
+    "ts-node": "^3.0.2",
     "tslint": "https://github.com/mgechev/tslint#ng-template-migration",
     "typescript": "^2.2.2",
     "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.12"
   }
 }
