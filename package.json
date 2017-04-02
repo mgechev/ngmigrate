@@ -7,7 +7,7 @@
   "description": "Automatic migration of Angular applications",
   "main": "migrate.js",
   "scripts": {
-    "publish": "rm -rf dist && mkdir dist && cp -r bin migrate.js migrate.json README.md package.json resources dist && ts-node tools/cleanup.ts"
+    "release": "rm -rf dist && mkdir dist && cp -r bin migrate.js migrate.json README.md package.json resources dist && ts-node tools/cleanup.ts"
   },
   "repository": {
     "type": "git",
@@ -30,12 +30,12 @@
     "codelyzer": "https://github.com/mgechev/codelyzer-migration",
     "inquirer": "^3.0.6",
     "rxjs": "5.1.0",
-    "ts-node": "^3.0.2",
     "tslint": "https://github.com/mgechev/tslint#ng-template-migration",
     "typescript": "^2.2.2",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@types/node": "^7.0.12"
+    "@types/node": "^7.0.12",
+    "ts-node": "^3.0.2"
   }
 }
