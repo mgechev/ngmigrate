@@ -2,10 +2,11 @@ var chalk = require('chalk');
 var inquirer = require('inquirer');
 var exec = require('child_process').execSync;
 var fs = require('fs');
+var path = require('path');
 
 var newline = function () { console.log() };
 
-console.log(fs.readFileSync('./resources/banner').toString());
+console.log(fs.readFileSync(path.join(__dirname, 'resources', 'banner')).toString());
 
 newline();
 console.log(chalk.green('Let\'s migrate your templates!'));
