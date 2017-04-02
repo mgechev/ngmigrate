@@ -12,7 +12,7 @@ newline();
 console.log(chalk.green('Let\'s migrate your templates!'));
 newline();
 
-var files = process.argv.slice(1, process.argv.length);
+var files = process.argv.slice(2, process.argv.length);
 
 if (!files.length) {
   console.log(chalk.red('Path is not provided!'));
@@ -23,7 +23,7 @@ if (!files.length) {
   process.exit(0);
 }
 
-var command = './node_modules/.bin/tslint -c migrate.json ' + files.join(' ');
+var command = path.join(__dirname, 'node_modules', '.bin', 'tslint') + ' -c ' + path.join(__dirname, 'migrate.json') + ' ' + files.join(' ');
 var foundErrors = false;
 
 try {
